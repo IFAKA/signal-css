@@ -1,0 +1,38 @@
+{
+  "name": "signal-css",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./styles.css": "./packages/signal-css/src/styles.css",
+    "./animations.css": "./packages/signal-css/src/animations.css",
+    "./core.css": "./packages/signal-css/src/core.css",
+    "./layout.css": "./packages/signal-css/src/layout.css",
+    "./media.css": "./packages/signal-css/src/media.css",
+    "./forms.css": "./packages/signal-css/src/forms.css",
+    "./navigation.css": "./packages/signal-css/src/navigation.css",
+    "./data.css": "./packages/signal-css/src/data.css",
+    "./overlays.css": "./packages/signal-css/src/overlays.css",
+    "./components.css": "./packages/signal-css/src/components.css"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "predev": "npm run lint && npm run check:boundaries",
+    "build": "next build",
+    "prebuild": "npm run lint && npm run check:boundaries",
+    "start": "next start",
+    "lint": "node scripts/check-signal-css.mjs",
+    "check:boundaries": "node scripts/check-package-boundaries.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@signal-css/react": "file:../signal-components/packages/signal-ui-react",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "typescript": "^7.0.2"
+  }
+}

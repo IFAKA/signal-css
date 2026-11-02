@@ -1,0 +1,31 @@
+{
+  "name": "signal-css",
+  "version": "0.1.0",
+  "description": "A framework-agnostic, browser-first CSS framework for semantic HTML.",
+  "private": true,
+  "sideEffects": [
+    "./src/styles.css",
+    "./src/animations.css",
+    "./src/core.css",
+    "./src/layout.css",
+    "./src/media.css",
+    "./src/forms.css",
+    "./src/navigation.css",
+    "./src/data.css",
+    "./src/overlays.css",
+    "./src/components.css"
+  ],
+  "exports": {
+    ".": "./src/styles.css",
+    "./styles.css": "./src/styles.css",
+    "./animations.css": "./src/animations.css",
+    "./core.css": "./src/core.css",
+    "./layout.css": "./src/layout.css",
+    "./media.css": "./src/media.css",
+    "./forms.css": "./src/forms.css",
+    "./navigation.css": "./src/navigation.css",
+    "./data.css": "./src/data.css",
+    "./overlays.css": "./src/overlays.css",
+    "./components.css": "./src/components.css"
+  }
+}

@@ -1,0 +1,10 @@
+/* Signal CSS aggregate contract. Focused modules are independently importable. */
+@layer signal.core, signal.layout, signal.media, signal.forms, signal.navigation, signal.data, signal.overlays, signal.components;
+@import "./core.css" layer(signal.core);
+@import "./layout.css" layer(signal.layout);
+@import "./media.css" layer(signal.media);
+@import "./forms.css" layer(signal.forms);
+@import "./navigation.css" layer(signal.navigation);
+@import "./data.css" layer(signal.data);
+@import "./overlays.css" layer(signal.overlays);
+@import "./components.css" layer(signal.components);

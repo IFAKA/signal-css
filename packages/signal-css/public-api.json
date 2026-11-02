@@ -1,0 +1,15 @@
+{
+  "modules": {
+    "core.css": ["native elements", ".badge", ".callout", ".card", ".code-block", ".help", ".label", ".message", ".muted", ".skip-link"],
+    "layout.css": [".alert-description", ".alert-title", ".auto-grid", ".card", ".card-content", ".card-description", ".card-footer", ".card-header", ".card-title", ".cluster", ".grid", ".layout", ".readable", ".row", ".shell", ".sidebar", ".spread", ".stack", ".three", ".two"],
+    "media.css": [".media", ".media-caption"],
+    "forms.css": [".field", ".field-description", ".field-error", ".form-layout", ".switch-line", "data-invalid"],
+    "navigation.css": [".is-active", ".menu-list", ".menu-popover", ".pagination", ".pagination-content", ".tabs"],
+    "data.css": [".alert", ".badge", ".badge-neutral", ".badge-success", ".badge-warning", ".callout", ".callout-info", ".callout-warning", ".card", ".data-table", ".empty-state", ".message", ".status", ".warn", "progress", "meter"],
+    "overlays.css": [".popover", "dialog", "popover", "details"],
+    "components.css": [".accordion", ".accordion-content", ".accordion-item", ".accordion-trigger", ".actions", ".avatar", ".avatar-fallback", ".avatar-image", ".breadcrumb", ".breadcrumb-separator", ".bubble", ".callout", ".carousel", ".carousel-content", ".carousel-slide", ".carousel-status", ".chart", ".chart-caption", ".chart-legend", ".cluster", ".code-chip", ".collapsible", ".combobox", ".combobox-list", ".command", ".command-list", ".disclosure-content", ".empty-content", ".empty-media", ".hover-card-content", ".input-group", ".input-group-addon", ".input-group-text", ".input-otp", ".item-actions", ".item-content", ".item-description", ".item-group", ".item-media", ".item-title", ".list-item", ".menu-popover", ".menubar", ".message-actions", ".message-scroller", ".mini-chart", ".mini-sidebar", ".navigation-menu", ".navigation-menu-content", ".otp-input", ".otp-row", ".pagination", ".pagination-content", ".popover", ".progress-field", ".resizable-demo", ".resizable-group", ".resizable-handle", ".resizable-horizontal", ".resizable-panel", ".resizable-vertical", ".scroll-area", ".select-content", ".select-root", ".sidebar-content", ".sidebar-menu", ".sidebar-provider", ".skeleton-stack", ".spinner", ".tabs", ".toast", ".toast-viewport", ".toggle-group", ".toolbar", ".type-scale", ".typography"]
+  },
+  "variants": { "button": ["primary", "secondary", "danger", "quiet"] },
+  "aggregate": "styles.css",
+  "optional": "animations.css"
+}

@@ -1,0 +1,4 @@
+/* Forms: native controls plus the reusable field relationship. */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]), select, textarea { width: 100%; min-height: 2.75rem; padding: .4rem; } input[type="checkbox"], input[type="radio"], input[type="range"], input[type="file"] { width: auto; }
+fieldset { display: grid; gap: .55rem; } fieldset label, .switch-line { display: flex; align-items: center; gap: .55rem; } .field { display: grid; gap: .35rem; } .field-description, .field-error { margin-block: 0; color: var(--text-muted); } .field-error { color: var(--danger); } .field[data-invalid="true"] input, .field[data-invalid="true"] textarea, .field[data-invalid="true"] select { border-color: var(--danger); }
+.form-layout { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: end; } .form-layout p { min-width: 0; } @media (max-width: 800px) { .form-layout { grid-template-columns: 1fr; } }

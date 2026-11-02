@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signal CSS plain HTML fixture</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+    <link rel="stylesheet" href="../../src/animations.css">
+  </head>
+  <body data-signal>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <main id="content" class="shell">
+      <header>
+        <p class="label">Signal CSS fixture</p>
+        <h1>Native HTML, styled without JavaScript</h1>
+        <p>Tokens, controls, layout, forms, tables, states, and motion use only the CSS package.</p>
+      </header>
+
+      <section class="grid two" aria-label="Framework examples">
+        <article class="card">
+          <h2 class="card-title">Native controls</h2>
+          <p class="card-description">Browser controls remain recognizable and keyboard accessible.</p>
+          <p><button type="button">Primary</button> <button data-variant="secondary" type="button">Secondary</button></p>
+          <label class="field"><span class="label">Name</span><input type="text" placeholder="Ada Lovelace"></label>
+          <label class="field"><span class="label">Topic</span><select><option>Framework basics</option><option>Accessibility</option></select></label>
+        </article>
+
+        <article class="card">
+          <h2 class="card-title">States and motion</h2>
+          <div class="callout callout-info"><strong>Ready</strong><p>Use semantic status containers for clear feedback.</p></div>
+          <p><span class="badge badge-success">Available</span> <span class="spinner" aria-label="Loading"></span></p>
+          <details><summary>Reduced motion</summary><p>System preferences are honored by the animation stylesheet.</p></details>
+        </article>
+      </section>
+
+      <section class="stack" aria-labelledby="frontier-title">
+        <header>
+          <h2 id="frontier-title">Responsive frontier patterns</h2>
+          <p class="muted">These compositions use system-aware tokens, adaptive columns, and semantic media without JavaScript.</p>
+        </header>
+        <div class="auto-grid">
+          <article class="card"><h3>Flexible card</h3><p>Auto-fit columns adapt to the available width.</p></article>
+          <figure class="media card"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23334155'/%3E%3Ccircle cx='320' cy='180' r='92' fill='%2394a3b8'/%3E%3C/svg%3E" alt="Abstract gray circle on a slate background"><figcaption class="media-caption">Responsive framed media with a readable caption.</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Consumer theme override</h2>
+        <pre class="code-block"><code>:root {
+  --accent: #7c3aed;
+  --surface-raised: #f5f3ff;
+}</code></pre>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Form and table primitives</h2>
+        <form class="form-layout">
+          <p><label class="label" for="email">Email</label><input id="email" type="email" required></p>
+          <p><label class="label" for="quantity">Quantity</label><input id="quantity" type="number" min="1" value="1"></p>
+          <p><button type="submit">Save</button></p>
+        </form>
+        <table class="data-table">
+          <caption>Example data</caption>
+          <thead><tr><th scope="col">Name</th><th scope="col">Status</th></tr></thead>
+          <tbody><tr><td>Framework</td><td class="status">Ready</td></tr><tr><td>Components</td><td class="muted">Optional</td></tr></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
